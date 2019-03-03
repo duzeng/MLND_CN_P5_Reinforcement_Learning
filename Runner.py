@@ -178,7 +178,7 @@ class Runner(object):
         writer.release()
 
     def plot_results(self):
-        plt.figure(figsize=(12,4))
+        plt.figure(figsize=(12, 4))
         plt.subplot(131)
         plt.title("Success Times")
         plt.plot(np.cumsum(self.train_robot_statics['success']))
